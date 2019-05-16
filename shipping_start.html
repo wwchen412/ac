@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="TW-zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>寄貨 « 物流秘書 « Assistant for Carry</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/shipping.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+     
+
+      <div class="menu_group menu_group-right">
+        <div class="menu"><a href="#" class="menu-item">首頁</a></div>
+        <div class="menu"><a href="#" class="menu-item">查詢</a></div>
+        <div class="menu"><a href="#" class="menu-item">說明</a></div>
+        <div class="menu">
+          <div class="linear-border">
+            <a href="#" class="costomer-btn ">寄貨</a>
+          </div>
+        </div>
+      </div>
+      <a class="header-logo" href="index.html"> <img src="img/logo.svg"/></a>
+    </header>
+
+    <div class="container">
+      <div class="shipping_start">
+        <!-- 表單 -->  
+            <!-- 標籤 -->
+            <ul class="nav justify-content-center" id="myTab" role="tablist">
+              <li class="text-center" >
+                <a
+                  class="shipping-tab active"
+                  id="archive-tab"
+                  data-toggle="tab"
+                  href="#archive"
+                  role="tab"
+                  aria-controls="archive"
+                  aria-selected="true"
+                  >建檔</a
+                >
+              </li>
+              <li class="text-center">
+                <a
+                  class="shipping-tab"
+                  id="batch-tab"
+                  data-toggle="tab"
+                  href="#batch"
+                  role="tab"
+                  aria-controls="batch"
+                  aria-selected="false"
+                  >批次上傳</a
+                >
+              </li>
+            </ul>
+            <!-- 標籤內容 -->
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active " id="archive" role="tabpanel" aria-labelledby="archive-tab" >
+                <!-- 表格 -->
+                <div class="form-table border-gray mb-2 form-table-done">
+                  <!-- 表單標題 -->
+                  <div class="form-table-title d-flex border-main-bottom">
+                    <div
+                      class="form-table_person form-table-row d-inline-flex justify-content-around "
+                    >
+                      <div class="p-1 num pl-4">序號</div>
+                      <div class="p-1 name">收件人姓名</div>
+                      <div class="p-1 phone">收件人電話</div>
+                      <div class="p-1 address">收件人地址</div>
+                      <div class="p-1 mail">收件人E-mail</div>
+                      <div class="p-1 val">收件人身分證號碼</div>
+                     
+                    </div>
+                    <div
+                      class="form-table_product form-table-row d-inline-flex justify-content-around "
+                    >
+                    <div class="p-1 btn_holder"></div>
+                      <div class="p-1 product">規格</div>
+                      <div class="p-1 price">單價</div>
+                      <div class="p-1 length">數量</div>
+                      <div class="p-1 weight">總重量</div>
+                      <div class="p-1 total">運費總計</div>
+                    </div>
+                  </div>
+                  <!-- 表單列表 -->
+                  <div class="form-table-list d-flex">
+                    <!-- 表單左 -->
+                    <div class="form-table_person form-table-row d-inline-flex justify-content-around p-0 ">
+                      
+                      <div class="num p-1 "><button class="btn_add mr-1" tabindex="-1">＋</button>1</div>
+                      <div class="name p-1"><input placeholder="收件人姓名" /></div>
+                      <div class="phone p-1"><input placeholder="收件人電話" /></div>
+                      <div class="address p-1"><input placeholder="收件人地址" /></div>
+                      <div class="mail p-1"><input placeholder="收件人E-mail" /></div>
+                      <div class="val p-1"><input placeholder="收件人身分證號碼" /></div>
+                    </div>
+                    <!-- 表單右 -->
+                    <div class="form-table_product form-table-row d-inline-flex justify-content-around flex-column p-0"
+                    >
+                      <!-- 數量表格 -->
+                      <div class="product-list">
+                              <div class="btn_holder"><button class="btn_add mr-1" tabindex="-1">＋</button></div>
+                              <div class="product p-1"><input type="text" placeholder="規格"></div>
+                              <div class="price p-1"><input type="text" placeholder="單價"></div>
+                              <div class="length p-1"><input type="num" placeholder="數量"></div>
+                              <div class="weight p-1"><select class="" required>
+                                      <option value="0.5">0.5公斤</option>
+                                      <option value="1" selected>1公斤</option>
+                                      <option value="1.5">1.5公斤</option>
+                                      <option value="2">2公斤</option>
+                                      <option value="2.5">2.5公斤</option>
+                                      <option value="3">3公斤</option>
+                                      <option value="3.5">3.5公斤</option>
+                                      <option value="4">4公斤</option>
+                                      <option value="4.5">4.5公斤</option>
+                                      <option value="5">5公斤</option>
+                                      <option value="5.5">5.5公斤</option>
+                                      <option value="6">6公斤</option>
+                                      <option value="6.5">6.5公斤</option>
+                                      <option value="7">7公斤</option>
+                                      <option value="7.5">7.5公斤</option>
+                                      <option value="8">8公斤</option>
+                                      <option value="8.5">8.5公斤</option>
+                                      <option value="9">9公斤</option>
+                                      <option value="9.5">9.5公斤</option>
+                                      <option value="10">10公斤</option></select>
+                              </div>
+                              <div class="p-1 total">NTD. 240</div>
+                      </div>
+                      <!-- 數量表格 -->
+                      <div class="product-list">
+                              <div class="btn_holder"><button class="btn_add mr-1" tabindex="-1">＋</button></div>
+                              <div class="product p-1"><input type="text" placeholder="規格"></div>
+                              <div class="price p-1"><input type="text" placeholder="單價"></div>
+                              <div class="length p-1"><input type="num" placeholder="數量"></div>
+                              <div class="weight p-1">
+                              </div>
+                              <div class="p-1 total"></div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="form-table border-gray mb-2">
+                  <!-- 表單標題 -->
+                  <div class="form-table-title d-flex border-main-bottom">
+                    <div
+                      class="form-table_person form-table-row d-inline-flex justify-content-around "
+                    >
+                      <div class="p-1 num pl-4">序號</div>
+                      <div class="p-1 name">收件人姓名</div>
+                      <div class="p-1 phone">收件人電話</div>
+                      <div class="p-1 address">收件人地址</div>
+                      <div class="p-1 mail">收件人E-mail</div>
+                      <div class="p-1 val">收件人身分證號碼</div>
+                    </div>
+                    <div
+                      class="form-table_product form-table-row d-inline-flex justify-content-around "
+                    >
+                    <div class="p-1 btn_holder"></div>
+                      <div class="p-1 product">規格</div>
+                      <div class="p-1 price">單價</div>
+                      <div class="p-1 length">數量</div>
+                      <div class="p-1 weight">總重量</div>
+                    </div>
+                  </div>
+                  <!-- 表單列表 -->
+                  <div class="form-table-list d-flex">
+                    <!-- 表單左 -->
+                    <div class="form-table_person form-table-row d-inline-flex justify-content-around p-0 ">
+                      
+                      <div class="num p-1 "><button class="btn_add mr-1" tabindex="-1">＋</button>1</div>
+                      <div class="name p-1"><input placeholder="收件人姓名" /></div>
+                      <div class="phone p-1"><input placeholder="收件人電話" /></div>
+                      <div class="address p-1"><input placeholder="收件人地址" /></div>
+                      <div class="mail p-1"><input placeholder="收件人E-mail" /></div>
+                      <div class="val p-1"><input placeholder="收件人身分證號碼" /></div>
+                    </div>
+                    <!-- 表單右 -->
+                    <div class="form-table_product form-table-row d-inline-flex justify-content-around flex-column p-0"
+                    >
+                      <!-- 數量表格 -->
+                      <div class="product-list">
+                              <div class="btn_holder"><button class="btn_add mr-1" tabindex="-1">＋</button></div>
+                              <div class="product p-1"><input type="text" placeholder="規格"></div>
+                              <div class="price p-1"><input type="text" placeholder="單價"></div>
+                              <div class="length p-1"><input type="num" placeholder="數量"></div>
+                              <div class="weight p-1"><select class="" required>
+                                      <option value="0.5">0.5公斤</option>
+                                      <option value="1" selected>1公斤</option>
+                                      <option value="1.5">1.5公斤</option>
+                                      <option value="2">2公斤</option>
+                                      <option value="2.5">2.5公斤</option>
+                                      <option value="3">3公斤</option>
+                                      <option value="3.5">3.5公斤</option>
+                                      <option value="4">4公斤</option>
+                                      <option value="4.5">4.5公斤</option>
+                                      <option value="5">5公斤</option>
+                                      <option value="5.5">5.5公斤</option>
+                                      <option value="6">6公斤</option>
+                                      <option value="6.5">6.5公斤</option>
+                                      <option value="7">7公斤</option>
+                                      <option value="7.5">7.5公斤</option>
+                                      <option value="8">8公斤</option>
+                                      <option value="8.5">8.5公斤</option>
+                                      <option value="9">9公斤</option>
+                                      <option value="9.5">9.5公斤</option>
+                                      <option value="10">10公斤</option>
+                                    </select></div>
+                      </div>
+                      
+                    </div>
+                  </div>
+               </div>
+              </div>     
+      </div>
+      <!-- 寄件者 -->
+      <div class="sender-form">
+          <div class="sender-title text-center border-main-bottom pb-3 text-main" >
+              寄件者資訊
+          </div>
+          <div class="sender-info d-flex justify-content-center m-auto">
+              <input type="text" placeholder="自動送件編號">
+              <input type="text" placeholder="寄件人姓名">
+              <input type="text" placeholder="寄件人電話">
+              <input type="text" class="address" placeholder="寄件人地址">
+              <input type="text" placeholder="寄件人Email">
+              <input type="text" placeholder="寄件人身份證號碼">
+          </div>
+      </div>
+      <div class="send-btn">
+        <div class="linear-border ">
+                <button class="costomer-btn" type="submit" value="" onclick="javascript:window.location.href='/shipping_done.html'">下一步</button></div>
+        </div>
+
+    </div>
+    <footer></footer>
+  </body>
+</html>

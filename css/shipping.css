@@ -1,0 +1,142 @@
+.text-main {
+  color: #0080ff; }
+
+input, select {
+  border: 1px solid black;
+  padding: 2.5px 5px;
+  width: 100%;
+  border-radius: 2.5px; }
+  input:focus, select:focus {
+    border: 1px solid black; }
+
+.form-table {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.75em; }
+  .form-table .form-table-title {
+    color: #0080ff; }
+  .form-table .form-table_person {
+    width: 65%; }
+  .form-table .form-table_product {
+    width: 35%;
+    padding: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .form-table .form-table-row,
+  .form-table .product-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    vertical-align: middle; }
+    .form-table .form-table-row > div,
+    .form-table .product-list > div {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 50px;
+      -ms-flex: 1 1 50px;
+      flex: 1 1 50px;
+      text-align: left;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .form-table .form-table-row > div.price, .form-table .form-table-row > div.length,
+      .form-table .product-list > div.price,
+      .form-table .product-list > div.length {
+        -webkit-box-flex: 0.5;
+        -webkit-flex: 0.5 1 25px;
+        -ms-flex: 0.5 1 25px;
+        flex: 0.5 1 25px; }
+    .form-table .form-table-row .btn_holder,
+    .form-table .product-list .btn_holder {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 30px;
+      -ms-flex: 0 0 30px;
+      flex: 0 0 30px;
+      padding-top: 7.5px;
+      text-align: center; }
+    .form-table .form-table-row .val,
+    .form-table .product-list .val {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 150px;
+      -ms-flex: 1 1 150px;
+      flex: 1 1 150px; }
+    .form-table .form-table-row .num,
+    .form-table .product-list .num {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 75px;
+      -ms-flex: 1 1 75px;
+      flex: 1 1 75px; }
+    .form-table .form-table-row .phone, .form-table .form-table-row .name,
+    .form-table .product-list .phone,
+    .form-table .product-list .name {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 100px;
+      -ms-flex: 1 1 100px;
+      flex: 1 1 100px; }
+    .form-table .form-table-row .address,
+    .form-table .product-list .address {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 250px;
+      -ms-flex: 1 1 250px;
+      flex: 1 1 250px; }
+    .form-table .form-table-row .mail,
+    .form-table .product-list .mail {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 180px;
+      -ms-flex: 1 1 180px;
+      flex: 1 1 180px; }
+  .form-table .product-list {
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+.send-btn {
+  max-width: 150px;
+  margin: 1.5rem auto; }
+
+.border-main-bottom {
+  border-bottom: 1px solid #0080ff; }
+
+.sender-form {
+  padding: 1rem 0;
+  font-size: 0.75rem; }
+  .sender-form .sender-info {
+    max-width: 960px; }
+    .sender-form .sender-info input {
+      margin: 10px 5px;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 100px;
+      -ms-flex: 1 1 100px;
+      flex: 1 1 100px; }
+      .sender-form .sender-info input.address {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 200px;
+        -ms-flex: 1 1 200px;
+        flex: 1 1 200px; }
+
+.btn_add {
+  border: 1px solid #0080ff;
+  border-radius: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: bold;
+  color: #0080ff; }
+
+.shipping_done .form-table-list {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0px; }
+
+.shipping_done .total_price {
+  color: red; }
+  .shipping_done .total_price span {
+    display: inline-block;
+    padding: 5px;
+    min-width: 100px; }

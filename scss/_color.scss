@@ -1,0 +1,36 @@
+$maincolor: #0080ff;
+$lightcolor: #00ffff;
+.text-main{
+    color:$maincolor;
+}
+@mixin mainLinear {
+  background: linear-gradient(to right, $lightcolor 0%, $maincolor 100%);
+ 
+}
+%mainLinear {
+  @include mainLinear;
+}
+%borderLinear {
+  background-clip: padding-box;
+  border: solid 1px transparent;
+  position: relative;
+  & > *{
+    margin: 1px;
+    border:0;
+    width: calc(100% - 2px);
+  }
+  &:after {
+    content: "";
+    display: block;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    @extend %mainLinear;
+  }
+}

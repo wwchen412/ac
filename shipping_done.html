@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="TW-zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>寄貨 « 物流秘書 « Assistant for Carry</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/shipping.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+     
+
+      <div class="menu_group menu_group-right">
+        <div class="menu"><a href="#" class="menu-item">首頁</a></div>
+        <div class="menu"><a href="#" class="menu-item">查詢</a></div>
+        <div class="menu"><a href="#" class="menu-item">說明</a></div>
+        <div class="menu">
+          <div class="linear-border">
+            <a href="#" class="costomer-btn ">寄貨</a>
+          </div>
+        </div>
+      </div>
+      <a class="header-logo" href="index.html"> <img src="img/logo.svg"/></a>
+    </header>
+
+    <div class="container">
+      <div class="shipping_done">
+        <!-- 表單 -->  
+            <!-- 標籤內容 -->
+            
+              <div class="tab-pane fade show active " id="archive" role="tabpanel" aria-labelledby="archive-tab" >
+                <div class="form-table">
+                  <!-- 表單標題 -->
+                  <div class="form-table-title d-flex border-main-bottom">
+                    <div
+                      class="form-table_person form-table-row d-inline-flex justify-content-around "
+                    >
+                      <div class="p-1 num">序號</div>
+                      <div class="p-1 name">收件人姓名</div>
+                      <div class="p-1 phone">收件人電話</div>
+                      <div class="p-1 address">收件人地址</div>
+                      <div class="p-1 mail">收件人E-mail</div>
+                      <div class="p-1 val">收件人身分證號碼</div>
+                    </div>
+                    <div
+                      class="form-table_product form-table-row d-inline-flex justify-content-around "
+                    >
+                   
+                      <div class="p-1 product">規格</div>
+                      <div class="p-1 price">單價</div>
+                      <div class="p-1 length">數量</div>
+                      <div class="p-1 weight">總重量(kg)</div>
+                      <div class="p-1 total">運費總計</div>
+                    </div>
+                  </div>
+                  <!-- 表單列表 -->
+                  <div class="form-table-list d-flex">
+                    <div class="form-table_person form-table-row d-inline-flex justify-content-around p-0 ">
+                      
+                      <div class="num p-1 ">1</div>
+                      <div class="name p-1">廖硯硯</div>
+                      <div class="phone p-1">0912345678</div>
+                      <div class="address p-1">24145新北市三重區大仁街30號</div>
+                      <div class="mail p-1">liaokuoyan@gmail.com</div>
+                      <div class="val p-1">F123456789</div>
+                    </div>
+
+                    <div class="form-table_product form-table-row d-inline-flex justify-content-around p-0"
+                    >
+                    
+                      <div class="product-list">
+                              
+                              <div class="product p-1">藍色Ｓ</div>
+                              <div class="price p-1">400</div>
+                              <div class="length p-1">1</div>
+                              <div class="weight p-1">3</div>
+                              <div class="p-1 total">NTD.240</div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                  <!-- 表單列表 -->
+                  <div class="form-table-list d-flex">
+                      <div class="form-table_person form-table-row d-inline-flex justify-content-around p-0 ">
+                        
+                        <div class="num p-1 ">1</div>
+                        <div class="name p-1">廖硯硯</div>
+                        <div class="phone p-1">0912345678</div>
+                        <div class="address p-1">24145新北市三重區大仁街30號</div>
+                        <div class="mail p-1">liaokuoyan@gmail.com</div>
+                        <div class="val p-1">F123456789</div>
+                      </div>
+  
+                      <div class="form-table_product form-table-row d-inline-flex justify-content-around p-0"
+                      >
+                      
+                        <div class="product-list">
+                                
+                                <div class="product p-1">藍色Ｓ</div>
+                                <div class="price p-1">400</div>
+                                <div class="length p-1">1</div>
+                                <div class="weight p-1">3</div>
+                                <div class="p-1 total">NTD.240</div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                  <!-- 表單列表 -->
+                  <div class="form-table-list d-flex">
+                      <div class="form-table_person form-table-row d-inline-flex justify-content-around p-0 ">
+                        
+                        <div class="num p-1 ">1</div>
+                        <div class="name p-1">廖硯硯</div>
+                        <div class="phone p-1">0912345678</div>
+                        <div class="address p-1">24145新北市三重區大仁街30號</div>
+                        <div class="mail p-1">liaokuoyan@gmail.com</div>
+                        <div class="val p-1">F123456789</div>
+                      </div>
+  
+                      <div class="form-table_product form-table-row d-inline-flex justify-content-around p-0"
+                      >
+                      
+                        <div class="product-list">
+                                
+                                <div class="product p-1">藍色Ｓ</div>
+                                <div class="price p-1">400</div>
+                                <div class="length p-1">1</div>
+                                <div class="weight p-1">3</div>
+                                <div class="p-1 total">NTD.240</div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                    <!-- 表單列表 -->
+                  <div class="form-table-list d-flex">
+                      <div class="form-table_person form-table-row d-inline-flex justify-content-around p-0 ">
+                        
+                        <div class="num p-1 ">1</div>
+                        <div class="name p-1">廖硯硯</div>
+                        <div class="phone p-1">0912345678</div>
+                        <div class="address p-1">24145新北市三重區大仁街30號</div>
+                        <div class="mail p-1">liaokuoyan@gmail.com</div>
+                        <div class="val p-1">F123456789</div>
+                      </div>
+  
+                      <div class="form-table_product form-table-row d-inline-flex justify-content-around p-0"
+                      >
+                      
+                        <div class="product-list">
+                                
+                                <div class="product p-1">藍色Ｓ</div>
+                                <div class="price p-1">400</div>
+                                <div class="length p-1">1</div>
+                                <div class="weight p-1">3</div>
+                                <div class="p-1 total">NTD.240</div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                    <div class="form-table-list d-flex ">
+                      <div class="total_price ml-auto"> 
+                        <span>總計金額</span>
+                        <span>NTD.960</span>
+                      </div>
+                     
+                    </div>
+              </div>
+                
+      </div>
+      <!-- 寄件者 -->
+      <div class="sender-form">
+          <div class="sender-title text-center border-main-bottom pb-3 text-main" >
+              寄件者資訊
+          </div>
+          <div class="sender-info d-flex justify-content-center m-auto">
+             <div class="p-3">211255433327911854</div>
+             <div class="p-3">黃書於</div>
+             <div class="p-3">0911000222</div>
+             <div class="p-3">20111新北市三峽區大勇路321巷32號2樓</div>
+             <div class="p-3">pinkbo@gmail.com</div>
+             <div class="p-3">F221114545</div>
+          </div>
+      </div>
+      <div class="btn-groups text-center">
+          <div class="send-btn d-inline-block">
+              <div class="linear-border">
+                      <button class="costomer-btn" type="submit" value="" onclick="javascript:window.location.href='/shipping_start.html'" >上一步</button></div>
+           </div>
+           <div class="send-btn d-inline-block">
+              <div class="linear-border">
+                      <button class="costomer-btn" type="submit" value="" onclick="javascript:window.location.href='/shipping_after.html' " >確認付款</button></div>
+              </div>
+          </div>    
+          </div>
+          
+      </div>
+      
+    <footer></footer>
+  </body>
+</html>
