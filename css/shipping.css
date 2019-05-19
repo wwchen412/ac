@@ -1,6 +1,12 @@
 .text-main {
   color: #0080ff; }
 
+.packge-progress ul:after {
+  background: -webkit-gradient(linear, left top, right top, from(#00ffff), to(#0080ff));
+  background: -webkit-linear-gradient(left, #00ffff 0%, #0080ff 100%);
+  background: -o-linear-gradient(left, #00ffff 0%, #0080ff 100%);
+  background: linear-gradient(to right, #00ffff 0%, #0080ff 100%); }
+
 input, select {
   border: 1px solid black;
   padding: 2.5px 5px;
@@ -140,3 +146,69 @@ input, select {
     display: inline-block;
     padding: 5px;
     min-width: 100px; }
+
+.packge-progress {
+  font-size: 0.75rem;
+  color: #0080ff;
+  max-width: 958px;
+  margin: auto; }
+  .packge-progress ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    margin: 30px 0; }
+    .packge-progress ul:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: -1; }
+    .packge-progress ul li {
+      text-align: center;
+      display: inline-block;
+      color: #ddd; }
+      .packge-progress ul li.dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ddd;
+        z-index: 100; }
+      .packge-progress ul li::before {
+        content: attr(data-text);
+        width: 100px;
+        position: absolute;
+        top: 10px;
+        text-align: center;
+        top: -30px;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 1; }
+      .packge-progress ul li:after {
+        content: '';
+        position: absolute;
+        width: calc((100% - 50px)/4);
+        height: 3px;
+        background-color: #ddd;
+        top: 50%;
+        -webkit-transform: translate(calc(-100% - 5px), -50%);
+        -ms-transform: translate(calc(-100% - 5px), -50%);
+        transform: translate(calc(-100% - 5px), -50%);
+        z-index: -1; }
+      .packge-progress ul li.active {
+        color: #0080ff; }
+      .packge-progress ul li.active.dot {
+        background-color: #0080ff; }
+      .packge-progress ul li.active:after, .packge-progress ul li:first-child:after {
+        width: 0; }
