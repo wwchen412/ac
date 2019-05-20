@@ -139,6 +139,10 @@ header .menu {
   color: #4d4d4d;
   border-left: 1px solid #dddddd; }
 
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  header .menu {
+    padding: 0; } }
+
 header .menu:last-child {
   border-left: none; }
 
