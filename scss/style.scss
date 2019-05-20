@@ -43,6 +43,7 @@ input,select,textarea,button{
     appearance: none;
     outline: 0;
     border:0;
+    background: #fff;
     &:active,&:focus{
         outline: 0;
     }

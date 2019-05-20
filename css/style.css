@@ -75,7 +75,8 @@ input, select, textarea, button {
   -moz-appearance: none;
   appearance: none;
   outline: 0;
-  border: 0; }
+  border: 0;
+  background: #fff; }
   input:active, input:focus, select:active, select:focus, textarea:active, textarea:focus, button:active, button:focus {
     outline: 0; }
 
