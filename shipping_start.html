@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
   <title>寄貨 « 物流秘書 « Assistant for Carry</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/shipping.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shipping.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
@@ -29,12 +30,12 @@
 
 
     <div class="menu_group menu_group-right">
-      <div class="menu"><a href="#" class="menu-item">首頁</a></div>
-      <div class="menu"><a href="#" class="menu-item">查詢</a></div>
+      <div class="menu"><a href="index.html" class="menu-item">首頁</a></div>
+      <div class="menu"><a href="search.html" class="menu-item">查詢</a></div>
       <div class="menu"><a href="#" class="menu-item">說明</a></div>
       <div class="menu">
         <div class="linear-border">
-          <a href="#" class="costomer-btn ">寄貨</a>
+          <a href="shipping_start.html" class="costomer-btn ">寄貨</a>
         </div>
       </div>
     </div>
@@ -85,7 +86,7 @@
               <!-- 表單左 -->
               <div class="form-table_person form-table-row d-inline-flex justify-content-around p-0 ">
 
-                <div class="num p-1 "><button class="btn_add mr-1" tabindex="-1">＋</button>1</div>
+                <div class="num p-1 "><button class="btn_rounded btn_clear mr-1" tabindex="-1"><i class="material-icons">clear</i></button>1</div>
                 <div class="name p-1"><input placeholder="廖硯硯" /></div>
                 <div class="phone p-1"><input placeholder="0989309449" /></div>
                 <div class="address p-1"><input placeholder="24145新北市三重區大仁街30號" /></div>
@@ -96,7 +97,7 @@
               <div class="form-table_product form-table-row d-inline-flex justify-content-around flex-column p-0">
                 <!-- 數量表格 -->
                 <div class="product-list">
-                  <div class="btn_holder"><button class="btn_add mr-1" tabindex="-1">＋</button></div>
+                  <div class="btn_holder"><button class="btn_clear btn_rounded mr-1" tabindex="-1"><i class="material-icons">clear</i></button></div>
                   <div class="product p-1"><input type="text" placeholder="藍色Ｓ"></div>
                   <div class="price p-1"><input type="text" placeholder="240"></div>
                   <div class="length p-1"><input type="num" placeholder="1"></div>
@@ -127,7 +128,7 @@
                 </div>
                 <!-- 數量表格 -->
                 <div class="product-list">
-                  <div class="btn_holder"><button class="btn_add mr-1" tabindex="-1">＋</button></div>
+                  <div class="btn_holder"><button class="btn_add btn_rounded mr-1" tabindex="-1"><i class="material-icons">add</i></button></div>
                   <div class="product p-1"><input type="text" placeholder="規格"></div>
                   <div class="price p-1"><input type="text" placeholder="單價"></div>
                   <div class="length p-1"><input type="num" placeholder="數量"></div>
@@ -157,12 +158,13 @@
                 <div class="p-1 weight">總重量</div>
               </div>
             </div>
+            
             <!-- 表單列表 -->
             <div class="form-table-list d-flex">
               <!-- 表單左 -->
               <div class="form-table_person form-table-row d-inline-flex justify-content-around p-0 ">
 
-                <div class="num p-1 "><button class="btn_add mr-1" tabindex="-1">＋</button>1</div>
+                <div class="num p-1 "><button class="btn_add btn_rounded mr-1" tabindex="-1"><i class="material-icons">add</i></button>1</div>
                 <div class="name p-1"><input placeholder="收件人姓名" /></div>
                 <div class="phone p-1"><input placeholder="收件人電話" /></div>
                 <div class="address p-1"><input placeholder="收件人地址" /></div>
@@ -173,7 +175,7 @@
               <div class="form-table_product form-table-row d-inline-flex justify-content-around flex-column p-0">
                 <!-- 數量表格 -->
                 <div class="product-list">
-                  <div class="btn_holder"><button class="btn_add mr-1" tabindex="-1">＋</button></div>
+                  <div class="btn_holder"><button class="btn_add btn_rounded mr-1" tabindex="-1"><i class="material-icons">add</i></button></div>
                   <div class="product p-1"><input type="text" placeholder="規格"></div>
                   <div class="price p-1"><input type="text" placeholder="單價"></div>
                   <div class="length p-1"><input type="num" placeholder="數量"></div>
@@ -279,6 +281,9 @@
       })
       function uploadIng(){
         overLay.innerHTML = loading_html;
+        setTimeout(function(){
+          overLay.classList.remove('active');
+        },5000)
       }
       
     </script>
